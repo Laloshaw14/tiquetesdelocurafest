@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiquetes a Precios de Locura ✈️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 80px 20px 60px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .cta-button {
+      background: #ffdd00;
+      color: #333;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .cta-button:hover {
+      background: #ffc107;
+      transform: scale(1.05);
+    }
+
+    .reviews {
+      background: #fff;
+      color: #333;
+      padding: 60px 20px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      margin-top: 40px;
+      animation: fadeInUp 2s ease;
+    }
+
+    .reviews h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #444;
+    }
+
+    .review {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 1s forwards;
+    }
+
+    .review:nth-child(2) { animation-delay: 0.5s; }
+    .review:nth-child(3) { animation-delay: 1s; }
+
+    .review p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .review span {
+      font-weight: bold;
+      color: #555;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-8px); }
+      60% { transform: translateY(-4px); }
+    }
+
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✈️ Tiquetes a Precios de Locura</h1>
+    <p>Ofertas exclusivas en viajes económicos y promociones imperdibles</p>
+    <!-- Aquí pones el enlace de WhatsApp o reservas -->
+    <a href="https://wa.me/573001112233" class="cta-button" target="_blank">🔥 Reserva Ahora</a>
+  </header>
+
+  <section class="reviews">
+    <h2>Lo que dicen nuestros viajeros</h2>
+
+    <div class="review">
+      <p>"Conseguí un vuelo a Cartagena al mejor precio, súper recomendado."</p>
+      <span>- Laura M.</span>
+    </div>
+
+    <div class="review">
+      <p>"Me ahorré casi un 40% en mi viaje a San Andrés, excelente servicio."</p>
+      <span>- Carlos R.</span>
+    </div>
+
+    <div class="review">
+      <p>"La página es fácil de usar y siempre encuentro ofertas económicas."</p>
+      <span>- Andrea G.</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Viajes Económicos | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
